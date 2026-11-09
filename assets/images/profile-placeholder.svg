@@ -1,0 +1,25 @@
+<svg width="800" height="1000" viewBox="0 0 800 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="400" y1="0" x2="400" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F2ECFF"/>
+      <stop offset="0.5" stop-color="#D9CCFF"/>
+      <stop offset="1" stop-color="#B9B9E9"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="400" y1="120" x2="400" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#CDBBFF"/>
+      <stop offset="1" stop-color="#9FA7D9"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <circle cx="400" cy="360" r="180" fill="#E8E0FF"/>
+  <circle cx="400" cy="350" r="136" fill="#F4EFFE"/>
+  <path d="M250 770C290 660 350 610 400 610C450 610 510 660 550 770V1000H250V770Z" fill="url(#accent)"/>
+  <path d="M330 260C330 201 375 154 434 154H454C514 154 560 201 560 260V366C560 425 514 472 454 472H434C375 472 330 425 330 366V260Z" fill="#F9F4FF"/>
+  <path d="M330 260C330 194 384 142 451 142H449C516 142 570 194 570 260V292C570 340 542 381 498 398L442 423L400 442L358 423L302 398C258 381 230 340 230 292V260C230 194 284 142 351 142H349C416 142 470 194 470 260V266H330V260Z" fill="#1F243A"/>
+  <circle cx="385" cy="308" r="12" fill="#1F243A"/>
+  <circle cx="474" cy="308" r="12" fill="#1F243A"/>
+  <path d="M389 378C404 389 419 395 436 395C453 395 468 389 483 378" stroke="#B76C7D" stroke-width="10" stroke-linecap="round"/>
+  <path d="M314 150C332 95 380 55 430 56C490 57 520 85 548 146" stroke="#D9CCFF" stroke-width="16" stroke-linecap="round" opacity="0.8"/>
+  <rect x="245" y="40" width="310" height="58" rx="29" fill="#FFFFFF" fill-opacity="0.35"/>
+  <text x="400" y="78" text-anchor="middle" fill="#3E3E68" font-family="Arial, sans-serif" font-size="28" font-weight="700">MY PHOTO</text>
+</svg>

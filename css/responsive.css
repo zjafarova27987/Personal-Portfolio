@@ -1,0 +1,237 @@
+@media (prefers-reduced-motion: reduce) {
+  .world-island,
+  .island-visual,
+  .island-content,
+  .map-avatar,
+  .star {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+@media (max-width: 960px) {
+  .hero-layout,
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding-top: 4rem;
+  }
+
+  .hero-copy {
+    max-width: 100%;
+  }
+
+  .welcome-block {
+    margin-top: 1.5rem;
+  }
+
+  .welcome-line {
+    letter-spacing: 0.1em;
+  }
+
+  .welcome-subline {
+    font-size: 1rem;
+  }
+
+  .constellation {
+    width: min(100%, 300px);
+  }
+
+  .map-stage {
+    width: min(760px, 100%);
+    min-height: 640px;
+  }
+
+  .map-orbit-ring {
+    width: min(430px, 72vw);
+    height: min(430px, 72vw);
+  }
+
+  .map-avatar-space {
+    width: min(200px, 30vw);
+    height: 170px;
+  }
+
+  .map-info-panel {
+    width: min(300px, calc(100% - 1.5rem));
+  }
+
+  .map-avatar-hint {
+    top: 28%;
+    font-size: 0.62rem;
+    letter-spacing: 0.06em;
+  }
+
+  .profile-modal-card {
+    grid-template-columns: 1fr;
+    padding: 1.25rem;
+  }
+
+  .profile-photo-wrap {
+    min-height: 180px;
+  }
+
+  .island-home,
+  .island-story,
+  .island-skills,
+  .island-creation,
+  .island-future {
+    --orbit-radius: 220px;
+  }
+}
+
+@media (max-width: 700px) {
+  .nav-shell {
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0.8rem 0 1rem;
+  }
+
+  .site-nav {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .nav-link {
+    padding: 0.55rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .primary-button,
+  .secondary-link {
+    width: 100%;
+  }
+
+  .welcome-block {
+    margin-top: 1.25rem;
+  }
+
+  .welcome-line {
+    font-size: 1.8rem;
+    letter-spacing: 0.08em;
+  }
+
+  .welcome-subline {
+    font-size: 0.96rem;
+  }
+
+  .constellation {
+    width: min(100%, 260px);
+  }
+
+  .map-stage {
+    min-height: 600px;
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+  }
+
+  .map-orbit-ring {
+    width: min(360px, 75vw);
+    height: min(360px, 75vw);
+  }
+
+  .map-avatar-space {
+    width: min(170px, 38vw);
+    height: 150px;
+  }
+
+  .map-info-panel {
+    width: min(280px, calc(100% - 1.2rem));
+    padding: 0.7rem 0.85rem;
+  }
+
+  .map-avatar-hint {
+    top: 26%;
+    font-size: 0.56rem;
+    padding: 0.35rem 0.6rem;
+  }
+
+  .profile-modal {
+    padding: 0.75rem;
+  }
+
+  .profile-modal-card {
+    width: min(100%, calc(100vw - 1.4rem));
+    gap: 1rem;
+  }
+
+  .world-island {
+    --orbit-radius: 125px;
+  }
+
+  .island-home,
+  .island-story,
+  .island-skills,
+  .island-creation,
+  .island-future {
+    width: 120px;
+    height: 94px;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand {
+    font-size: 0.82rem;
+  }
+
+  .brand-mark {
+    width: 1.7rem;
+    height: 1.7rem;
+  }
+
+  .container {
+    width: min(var(--container-width), calc(100% - 1.2rem));
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .section-heading h2 {
+    font-size: 1.8rem;
+  }
+
+  .map-stage {
+    min-height: 520px;
+    padding-bottom: 5rem;
+  }
+
+  .map-orbit-ring {
+    width: min(300px, 80vw);
+    height: min(300px, 80vw);
+  }
+
+  .map-avatar-space {
+    width: min(140px, 40vw);
+    height: 120px;
+  }
+
+  .world-island {
+    --orbit-radius: 110px;
+  }
+
+  .island-home,
+  .island-story,
+  .island-skills,
+  .island-creation,
+  .island-future {
+    width: 110px;
+    height: 90px;
+  }
+
+  .island-name {
+    font-size: 0.64rem;
+  }
+
+  .island-tag {
+    font-size: 0.54rem;
+  }
+}

@@ -1,0 +1,54 @@
+<svg width="360" height="360" viewBox="0 0 360 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="starGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(180 150) rotate(90) scale(150 150)">
+      <stop stop-color="#F9F0FF" stop-opacity="0.9"/>
+      <stop offset="0.38" stop-color="#DCCBFF" stop-opacity="0.78"/>
+      <stop offset="0.7" stop-color="#BCA5F5" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#BCA5F5" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="starBody" x1="180" y1="55" x2="180" y2="295" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8EDFF"/>
+      <stop offset="0.34" stop-color="#E2D1FF"/>
+      <stop offset="0.7" stop-color="#C9B3F5"/>
+      <stop offset="1" stop-color="#B79AEF"/>
+    </linearGradient>
+    <linearGradient id="starHighlight" x1="122" y1="90" x2="230" y2="235" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFDF9" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#F0E4FF" stop-opacity="0.15"/>
+    </linearGradient>
+    <linearGradient id="goldAccent" x1="136" y1="130" x2="230" y2="230" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8E6B7"/>
+      <stop offset="1" stop-color="#D9B77C"/>
+    </linearGradient>
+    <filter id="starShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="16" stdDeviation="12" flood-color="#120F2A" flood-opacity="0.24"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#starShadow)">
+    <circle cx="180" cy="180" r="150" fill="url(#starGlow)"/>
+    <path d="M180 36L212 126L306 126L227 182L263 279L180 220L97 279L133 182L54 126L148 126L180 36Z" fill="url(#starBody)"/>
+    <path d="M180 60L205 128L276 128L217 174L244 248L180 203L116 248L143 174L84 128L155 128L180 60Z" fill="url(#starHighlight)" opacity="0.9"/>
+    <path d="M180 76L201 120L248 120L213 154L229 200L180 169L131 200L147 154L112 120L159 120L180 76Z" fill="#F9F1FF" opacity="0.65"/>
+
+    <ellipse cx="152" cy="170" rx="10" ry="12" fill="#2F2D44"/>
+    <ellipse cx="208" cy="170" rx="10" ry="12" fill="#2F2D44"/>
+    <circle cx="155" cy="166" r="2.5" fill="#FFF9FF"/>
+    <circle cx="205" cy="166" r="2.5" fill="#FFF9FF"/>
+
+    <ellipse cx="126" cy="186" rx="12" ry="7" fill="#F5C9D7" opacity="0.75"/>
+    <ellipse cx="234" cy="186" rx="12" ry="7" fill="#F5C9D7" opacity="0.75"/>
+
+    <path d="M164 206C171 211 175 214 180 214C185 214 189 211 196 206" stroke="#7A5C7D" stroke-width="3.5" stroke-linecap="round"/>
+
+    <path d="M90 92L95 106L109 111L95 116L90 130L85 116L71 111L85 106L90 92Z" fill="url(#goldAccent)" opacity="0.9"/>
+    <path d="M278 101L282 112L293 116L282 120L278 131L273 120L262 116L273 112L278 101Z" fill="url(#goldAccent)" opacity="0.9"/>
+    <path d="M261 227L266 240L279 245L266 250L261 263L255 250L242 245L255 240L261 227Z" fill="url(#goldAccent)" opacity="0.9"/>
+    <path d="M95 257L99 268L110 272L99 276L95 287L90 276L79 272L90 268L95 257Z" fill="url(#goldAccent)" opacity="0.9"/>
+
+    <circle cx="84" cy="161" r="3.5" fill="#F9F3FF"/>
+    <circle cx="277" cy="177" r="3.2" fill="#F9F3FF"/>
+    <circle cx="200" cy="86" r="3" fill="#FFF8E5"/>
+    <circle cx="216" cy="275" r="2.8" fill="#FFF8E5"/>
+  </g>
+</svg>

@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Zohra's Digital Universe — a magical portfolio placeholder for a future interactive creative portfolio."
+    />
+    <title>Zohra's Digital Universe</title>
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="#home" aria-label="Go to the home section">
+          <span class="brand-mark">✦</span>
+          <span class="brand-text">Zohra's Digital Universe</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Main navigation">
+          <a class="nav-link active" href="#home">Home</a>
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#skills">Skills</a>
+          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" href="#future">Future</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero-layout">
+          <div class="hero-copy">
+            <p class="eyebrow">Portfolio in progress</p>
+            <h1>Zohra's Digital Universe.</h1>
+            <p class="subtitle">A little world of creativity, curiosity, and code.</p>
+
+            <div class="hero-actions">
+              <button class="primary-button" type="button" data-explore>
+                Explore My World
+              </button>
+              <a class="secondary-link" href="#about">View details</a>
+            </div>
+
+            <div class="welcome-block" aria-label="Welcome message and star map constellation">
+              <p class="welcome-line">WELCOME!</p>
+              <p class="welcome-subline">Your journey begins here...</p>
+
+              <div
+                class="constellation"
+                aria-label="Cute celestial illustration"
+                tabindex="0"
+                role="button"
+              >
+                <svg viewBox="0 0 360 180" role="img" aria-label="Celestial illustration">
+                  <g class="celestial-decor">
+                    <g class="constellation-sparkles" aria-hidden="true"></g>
+
+                    <g
+                      class="celestial-sun-group"
+                      data-celestial="sun"
+                      data-original-center-x="118"
+                      data-original-center-y="98"
+                      aria-label="Sun"
+                    >
+                      <circle class="constellation-sun" cx="118" cy="98" r="32" />
+                      <circle class="constellation-sun-core" cx="118" cy="98" r="22" />
+                      <g class="constellation-sun-face">
+                        <circle cx="108" cy="94" r="3.2" fill="#442b1e" />
+                        <circle cx="128" cy="94" r="3.2" fill="#442b1e" />
+                        <path d="M104 110 Q118 122 132 110" fill="none" stroke="#442b1e" stroke-width="2.5" stroke-linecap="round" />
+                      </g>
+                    </g>
+
+                    <g
+                      class="celestial-moon-group"
+                      data-celestial="moon"
+                      data-original-center-x="246"
+                      data-original-center-y="90"
+                      aria-label="Moon"
+                    >
+                      <path class="constellation-moon" d="M246 58 A28 28 0 1 1 246 122 A22 22 0 1 0 246 58 Z" />
+                      <g class="constellation-moon-face">
+                        <circle cx="233" cy="88" r="3.2" fill="#4b3b67" />
+                        <circle cx="248" cy="88" r="3.2" fill="#4b3b67" />
+                        <path d="M230 101 Q241 109 252 101" fill="none" stroke="#4b3b67" stroke-width="2.5" stroke-linecap="round" />
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+
+                <div class="celestial-phrase" aria-live="polite">
+                  The world is too small for the walls.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-art" aria-label="Illustrated world map">
+            <div class="map-stage" id="interactive-map">
+              <div class="sky-glow"></div>
+              <div class="star star-one"></div>
+              <div class="star star-two"></div>
+              <div class="star star-three"></div>
+              <div class="star star-four"></div>
+              <div class="bridge bridge-one"></div>
+              <div class="bridge bridge-two"></div>
+              <div class="bridge bridge-three"></div>
+              <div class="map-orbit-ring" aria-hidden="true"></div>
+              <div class="map-avatar-space" aria-hidden="true"></div>
+              <div class="map-avatar-hint" aria-hidden="true">Click the star to meet me!</div>
+              <img
+                class="map-avatar"
+                src="assets/images/zohra-avatar.svg"
+                alt="Magical star mascot representing Zohra"
+                role="button"
+                tabindex="0"
+                aria-label="Open Zohra profile card"
+              />
+
+              <div class="profile-modal" id="profileModal" hidden>
+                <div class="profile-modal-backdrop" data-close-profile></div>
+                <div
+                  class="profile-modal-card"
+                  role="dialog"
+                  aria-modal="true"
+                  aria-labelledby="profileModalTitle"
+                >
+                  <button class="profile-close" type="button" aria-label="Close profile card">
+                    ×
+                  </button>
+
+                  <div class="profile-photo-wrap">
+                    <img
+                      src="assets/images/profile-placeholder.svg"
+                      alt="Profile placeholder for Zohra"
+                    />
+                  </div>
+
+                  <div class="profile-content">
+                    <p class="profile-kicker">Meet me</p>
+                    <h3 id="profileModalTitle">Zohra</h3>
+                    <p class="profile-title">Computer Science Student at ADA University.</p>
+
+                    <div class="profile-text">
+                      <p>Hello, dear explorers! Welcome to my world!</p>
+                      <p>
+                        Let me tell you more about myself. My name is Zohra, and I am a Computer
+                        Science student at ADA University.
+                      </p>
+                      <p>
+                        I love exploring new ideas, learning new things, and discovering what I can
+                        create with technology.
+                      </p>
+                      <p>
+                        This little universe is a place where I share my journey, my projects, my
+                        skills, and some of my dreams.
+                      </p>
+                      <p>I hope you enjoy this journey. Good luck!</p>
+                    </div>
+
+                    <button class="profile-button" type="button" data-story-target="#about">
+                      Explore My Story
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <button
+                class="world-island island-home active"
+                type="button"
+                data-target="home"
+                data-title="HOME ISLAND"
+                data-description="Return to the personal introduction and welcome area."
+                aria-label="Go to Home Island"
+                style="--orbit-angle: 18deg;"
+              >
+                <span class="island-visual">
+                  <span class="island-content">
+                    <span class="island-name">HOME</span>
+                    <span class="island-tag">Welcome</span>
+                  </span>
+                </span>
+              </button>
+
+              <button
+                class="world-island island-story"
+                type="button"
+                data-target="about"
+                data-title="STORY ISLAND"
+                data-description="Explore the background, education, and personal story placeholder."
+                aria-label="Go to Story Island"
+                style="--orbit-angle: 90deg;"
+              >
+                <span class="island-visual">
+                  <span class="island-content">
+                    <span class="island-name">STORY</span>
+                    <span class="island-tag">About</span>
+                  </span>
+                </span>
+              </button>
+
+              <button
+                class="world-island island-skills"
+                type="button"
+                data-target="skills"
+                data-title="SKILLS ISLAND"
+                data-description="Review technical and personal skill placeholders."
+                aria-label="Go to Skills Island"
+                style="--orbit-angle: 162deg;"
+              >
+                <span class="island-visual">
+                  <span class="island-content">
+                    <span class="island-name">SKILLS</span>
+                    <span class="island-tag">Growth</span>
+                  </span>
+                </span>
+              </button>
+
+              <button
+                class="world-island island-creation"
+                type="button"
+                data-target="projects"
+                data-title="CREATION ISLAND"
+                data-description="Visit project highlights such as Project 1, Hour of Code, and Robotics."
+                aria-label="Go to Creation Island"
+                style="--orbit-angle: 234deg;"
+              >
+                <span class="island-visual">
+                  <span class="island-content">
+                    <span class="island-name">CREATION</span>
+                    <span class="island-tag">Projects</span>
+                  </span>
+                </span>
+              </button>
+
+              <button
+                class="world-island island-future"
+                type="button"
+                data-target="future"
+                data-title="FUTURE ISLAND"
+                data-description="View future ambitions and planned directions."
+                aria-label="Go to Future Island"
+                style="--orbit-angle: 306deg;"
+              >
+                <span class="island-visual">
+                  <span class="island-content">
+                    <span class="island-name">FUTURE</span>
+                    <span class="island-tag">Goals</span>
+                  </span>
+                </span>
+              </button>
+
+            </div>
+
+            <div class="map-info-panel" aria-live="polite">
+              <p class="map-info-kicker">Selected destination</p>
+              <h3 id="mapInfoTitle">HOME ISLAND</h3>
+              <p id="mapInfoText">Return to the personal introduction and welcome area.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section story-island" id="about">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Story Island</p>
+            <h2>A storybook of dreams, hobbies, and goals</h2>
+            <a class="back-to-map" href="#interactive-map">Back to map</a>
+          </div>
+
+          <div class="story-island-shell">
+            <div class="story-tabs" role="tablist" aria-label="Story chapters">
+              <button
+                class="story-tab active"
+                type="button"
+                role="tab"
+                aria-selected="true"
+                aria-controls="story-panel-1"
+                id="story-tab-1"
+                data-story-target="story-panel-1"
+              >
+                My Dream
+              </button>
+              <button
+                class="story-tab"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="story-panel-2"
+                id="story-tab-2"
+                data-story-target="story-panel-2"
+              >
+                My Activities &amp; Hobbies
+              </button>
+              <button
+                class="story-tab"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="story-panel-3"
+                id="story-tab-3"
+                data-story-target="story-panel-3"
+              >
+                My Goals
+              </button>
+            </div>
+
+            <div class="story-panels">
+              <article
+                class="story-panel active"
+                id="story-panel-1"
+                role="tabpanel"
+                aria-labelledby="story-tab-1"
+              >
+                <div class="story-visual story-visual-dream" aria-hidden="true">
+                  <div class="story-portal">
+                    <span class="story-portal-glow"></span>
+                    <span class="story-number">07</span>
+                    <span class="story-portal-ring"></span>
+                  </div>
+                </div>
+
+                <div class="story-copy">
+                  <h3>Where My Story Began</h3>
+                  <p>
+                    My story began when I was seven years old. I started watching Let's Play
+                    videos on YouTube, and even back then, I already knew that I wanted to create my
+                    own games.
+                  </p>
+                  <p>
+                    Now, as a Computer Science student at ADA University, I am taking steps toward
+                    making that childhood dream a reality.
+                  </p>
+                  <p>
+                    Every new thing I learn brings me one step closer to the world I have always
+                    wanted to create.
+                  </p>
+                </div>
+              </article>
+
+              <article
+                class="story-panel"
+                id="story-panel-2"
+                role="tabpanel"
+                aria-labelledby="story-tab-2"
+                hidden
+              >
+                <div class="story-visual story-visual-photo" aria-hidden="true">
+                  <div class="story-camera">
+                    <span class="camera-lens"></span>
+                    <span class="camera-flash"></span>
+                    <span class="camera-slot"></span>
+                  </div>
+                  <div class="story-gallery-placeholder">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+
+                <div class="story-copy">
+                  <h3>Capturing Moments</h3>
+                  <p>
+                    I have different hobbies and interests, and photography is one of the things I
+                    truly enjoy.
+                  </p>
+                  <p>
+                    I love taking photos of people, capturing their emotions, and preserving moments
+                    that can last forever. For me, photography is more than just taking pictures; it's
+                    about keeping memories and telling stories through images.
+                  </p>
+                  <p>
+                    I am also a member of the Media Department at ADA Sport Club, where I can explore
+                    my interest in photography and media.
+                  </p>
+                </div>
+              </article>
+
+              <article
+                class="story-panel"
+                id="story-panel-3"
+                role="tabpanel"
+                aria-labelledby="story-tab-3"
+                hidden
+              >
+                <div class="story-visual story-visual-goals" aria-hidden="true">
+                  <div class="story-portal story-goal-portal">
+                    <span class="story-portal-glow"></span>
+                    <span class="story-dream-orbit"></span>
+                  </div>
+                </div>
+
+                <div class="story-copy">
+                  <h3>The World I Want to Create</h3>
+                  <p>
+                    One of my biggest dreams is to create my own digital world and share it with
+                    people. I want to build something that comes from my imagination, where others can
+                    explore, experience, and enjoy the worlds I create.
+                  </p>
+                  <p>
+                    But beyond all my professional dreams and ambitions, there is something even more
+                    important to me: I want to be happy and make other people happy too.
+                  </p>
+                  <p>
+                    I believe that success is not only about what we achieve, but also about how we
+                    feel and the happiness we bring into the lives of others.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" id="skills">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Skills</p>
+            <h2>Growing creative and technical skills</h2>
+            <a class="back-to-map" href="#interactive-map">Back to map</a>
+          </div>
+
+          <div class="skill-list" aria-label="Placeholder skill list">
+            <span class="skill-badge">HTML5</span>
+            <span class="skill-badge">CSS3</span>
+            <span class="skill-badge">JavaScript</span>
+            <span class="skill-badge">Responsive Design</span>
+            <span class="skill-badge">UX Thinking</span>
+            <span class="skill-badge">Creative Problem Solving</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" id="projects">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Projects</p>
+            <h2>Future portfolio highlights</h2>
+            <a class="back-to-map" href="#interactive-map">Back to map</a>
+          </div>
+
+          <div class="project-presentation">
+            <div class="project-panel project-intro-panel">
+              <h3>Logic Gates Project</h3>
+              <div class="project-description">
+                <p>The Logic Gates project was one of the four projects in the SITE 1101 course. My team and I were supposed to build three logic gates — OR, AND, and NOT — along with one additional bonus gate, XOR. The main idea was to film the entire process, explain how the gates work, and practically demonstrate how to build them. As a team, we worked really well together, and every team member was involved in the project. My main role was video editing. This project helped us develop our teamwork skills and learn many things about logic gates. We gained a better understanding of their concepts and how they work.</p>
+              </div>
+            </div>
+
+            <div class="project-panel project-video-panel">
+              <h3>My Logic Gates Demonstration</h3>
+              <div class="logic-video-launcher" id="logicVideoLauncher">
+                <button type="button" class="rocket-trigger" id="rocketTrigger" aria-label="Reveal the Logic Gates video link">
+                  <span class="rocket-visual" aria-hidden="true">
+                    <svg viewBox="0 0 240 90" role="img" aria-hidden="true" focusable="false">
+                      <defs>
+                        <linearGradient id="rocketGradient" x1="0%" x2="100%" y1="0%" y2="0%">
+                          <stop offset="0%" stop-color="#f5ebff" />
+                          <stop offset="50%" stop-color="#d8c3ff" />
+                          <stop offset="100%" stop-color="#b79ef5" />
+                        </linearGradient>
+                        <linearGradient id="rocketCore" x1="0%" x2="100%" y1="0%" y2="0%">
+                          <stop offset="0%" stop-color="#fff7ff" />
+                          <stop offset="100%" stop-color="#d7b9ff" />
+                        </linearGradient>
+                      </defs>
+                      <g class="rocket-svg">
+                        <path d="M16 42 L78 18 L130 18 L172 42 L130 66 L78 66 Z" fill="url(#rocketGradient)" opacity="0.96" />
+                        <path d="M130 18 L176 42 L130 66 Z" fill="#c7a9ff" opacity="0.9" />
+                        <path d="M66 18 L16 42 L66 66 Z" fill="#e6d9ff" opacity="0.7" />
+                        <path d="M86 30 L116 30 L126 42 L116 54 L86 54 Z" fill="url(#rocketCore)" opacity="0.96" />
+                        <circle cx="102" cy="42" r="8" fill="#fdf7ff" opacity="0.82" />
+                        <path d="M58 35 L26 24 L18 42 L26 60 L58 49 Z" fill="#d7c1ff" opacity="0.72" />
+                        <path d="M116 35 L164 24 L178 42 L164 60 L116 49 Z" fill="#c7a9ff" opacity="0.7" />
+                        <path d="M40 68 L58 82 L48 46 Z" fill="#ffb56e" opacity="0.9" />
+                        <path d="M55 68 L74 82 L64 46 Z" fill="#ffcc8d" opacity="0.75" />
+                        <path d="M82 68 L101 82 L92 46 Z" fill="#ffcc8d" opacity="0.7" />
+                      </g>
+                    </svg>
+                  </span>
+                  <span class="rocket-trail" aria-hidden="true">
+                    <span class="trail-particle trail-1"></span>
+                    <span class="trail-particle trail-2"></span>
+                    <span class="trail-particle trail-3"></span>
+                    <span class="trail-particle trail-4"></span>
+                  </span>
+                </button>
+
+                <a
+                  class="logic-video-link"
+                  href="https://youtu.be/lxGVRgjH0dI"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Watch My Logic Gates Video"
+                >
+                  Watch My Logic Gates Video
+                </a>
+              </div>
+            </div>
+
+            <div class="project-panel project-transition-panel">
+              <h3>Now it's your turn to play!</h3>
+              <p>Explore the logic gates, solve circuit challenges, and test what you've learned.</p>
+            </div>
+          </div>
+
+          <div class="logic-game" id="logicGame">
+            <div class="logic-header">
+              <div>
+                <p class="logic-kicker">Logic Gates Challenge</p>
+                <h3>Learn the logic behind digital decisions.</h3>
+              </div>
+              <div class="logic-scoreboard" aria-live="polite">
+                <span>Score: <strong id="logicScore">0</strong></span>
+                <span>Level: <strong id="logicLevelLabel">1</strong></span>
+              </div>
+            </div>
+
+            <div class="logic-stage-switcher" role="group" aria-label="Game levels">
+              <button type="button" class="logic-stage-btn active" data-stage="1">Level 1</button>
+              <button type="button" class="logic-stage-btn" data-stage="2">Level 2</button>
+              <button type="button" class="logic-stage-btn" data-stage="3">Level 3</button>
+            </div>
+
+            <div class="logic-difficulty" role="group" aria-label="Difficulty selector">
+              <button type="button" class="logic-difficulty-btn active" data-difficulty="beginner">
+                Beginner
+              </button>
+              <button type="button" class="logic-difficulty-btn" data-difficulty="intermediate">
+                Intermediate
+              </button>
+              <button type="button" class="logic-difficulty-btn" data-difficulty="advanced">
+                Advanced
+              </button>
+            </div>
+
+            <div class="logic-progress" aria-label="Game progress">
+              <span id="logicProgressBar"></span>
+            </div>
+
+            <div class="logic-stage active" id="logicStageLearn">
+              <div class="logic-stage-header">
+                <h4>Level 1 — Learn the Gates</h4>
+                <p>Toggle the inputs to see how each gate behaves.</p>
+              </div>
+
+              <div class="logic-gate-grid">
+                <article class="logic-gate-card" data-gate="AND">
+                  <div class="logic-gate-top">
+                    <h5>AND</h5>
+                    <span class="logic-gate-output">Output: <strong data-output>0</strong></span>
+                  </div>
+
+                  <div class="logic-circuit-diagram" aria-hidden="true">
+                    <div class="logic-input-column">
+                      <div class="logic-input-node is-on" data-input-side="a"><span>A</span></div>
+                      <div class="logic-input-node is-on" data-input-side="b"><span>B</span></div>
+                    </div>
+
+                    <div class="logic-circuit-trace">
+                      <span class="logic-wire wire-a"></span>
+                      <span class="logic-wire wire-b"></span>
+                      <span class="logic-gate-symbol">AND</span>
+                    </div>
+
+                    <div class="logic-output-column">
+                      <span class="logic-output-indicator">
+                        <span class="logic-output-label">OUT</span>
+                        <span class="logic-output-value">0</span>
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="logic-gate-controls">
+                    <button type="button" class="logic-toggle active" data-gate="AND" data-input="a" data-value="1">A = 1</button>
+                    <button type="button" class="logic-toggle" data-gate="AND" data-input="a" data-value="0">A = 0</button>
+                    <button type="button" class="logic-toggle active" data-gate="AND" data-input="b" data-value="1">B = 1</button>
+                    <button type="button" class="logic-toggle" data-gate="AND" data-input="b" data-value="0">B = 0</button>
+                  </div>
+                  <p class="logic-gate-explainer">AND gives 1 only when both inputs are 1.</p>
+                </article>
+
+                <article class="logic-gate-card" data-gate="OR">
+                  <div class="logic-gate-top">
+                    <h5>OR</h5>
+                    <span class="logic-gate-output">Output: <strong data-output>0</strong></span>
+                  </div>
+
+                  <div class="logic-circuit-diagram" aria-hidden="true">
+                    <div class="logic-input-column">
+                      <div class="logic-input-node is-on" data-input-side="a"><span>A</span></div>
+                      <div class="logic-input-node is-on" data-input-side="b"><span>B</span></div>
+                    </div>
+
+                    <div class="logic-circuit-trace">
+                      <span class="logic-wire wire-a"></span>
+                      <span class="logic-wire wire-b"></span>
+                      <span class="logic-gate-symbol">OR</span>
+                    </div>
+
+                    <div class="logic-output-column">
+                      <span class="logic-output-indicator">
+                        <span class="logic-output-label">OUT</span>
+                        <span class="logic-output-value">0</span>
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="logic-gate-controls">
+                    <button type="button" class="logic-toggle active" data-gate="OR" data-input="a" data-value="1">A = 1</button>
+                    <button type="button" class="logic-toggle" data-gate="OR" data-input="a" data-value="0">A = 0</button>
+                    <button type="button" class="logic-toggle active" data-gate="OR" data-input="b" data-value="1">B = 1</button>
+                    <button type="button" class="logic-toggle" data-gate="OR" data-input="b" data-value="0">B = 0</button>
+                  </div>
+                  <p class="logic-gate-explainer">OR gives 1 when at least one input is 1.</p>
+                </article>
+
+                <article class="logic-gate-card" data-gate="NOT">
+                  <div class="logic-gate-top">
+                    <h5>NOT</h5>
+                    <span class="logic-gate-output">Output: <strong data-output>0</strong></span>
+                  </div>
+
+                  <div class="logic-circuit-diagram logic-circuit-diagram-single" aria-hidden="true">
+                    <div class="logic-input-column">
+                      <div class="logic-input-node is-on" data-input-side="a"><span>A</span></div>
+                    </div>
+
+                    <div class="logic-circuit-trace">
+                      <span class="logic-wire wire-a"></span>
+                      <span class="logic-gate-symbol logic-gate-symbol-not">NOT</span>
+                    </div>
+
+                    <div class="logic-output-column">
+                      <span class="logic-output-indicator">
+                        <span class="logic-output-label">OUT</span>
+                        <span class="logic-output-value">0</span>
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="logic-gate-controls one-input">
+                    <button type="button" class="logic-toggle active" data-gate="NOT" data-input="a" data-value="1">Input = 1</button>
+                    <button type="button" class="logic-toggle" data-gate="NOT" data-input="a" data-value="0">Input = 0</button>
+                  </div>
+                  <p class="logic-gate-explainer">NOT flips the input: 1 becomes 0 and 0 becomes 1.</p>
+                </article>
+              </div>
+            </div>
+
+            <div class="logic-stage" id="logicStageSolve">
+              <div class="logic-stage-header">
+                <h4>Level 2 — Solve the Circuit</h4>
+                <p>Set the inputs to match the required output.</p>
+              </div>
+
+              <div class="logic-challenge-box">
+                <p class="logic-challenge-label">Challenge</p>
+                <h5 id="logicChallengePrompt">Choose values to make the output 1.</h5>
+
+                <div class="logic-input-controls" id="logicInputControls">
+                  <button type="button" class="logic-answer-toggle" data-input-index="0" data-value="1">A = 1</button>
+                  <button type="button" class="logic-answer-toggle" data-input-index="0" data-value="0">A = 0</button>
+                  <button type="button" class="logic-answer-toggle" data-input-index="1" data-value="1">B = 1</button>
+                  <button type="button" class="logic-answer-toggle" data-input-index="1" data-value="0">B = 0</button>
+                </div>
+
+                <div class="logic-answer-row">
+                  <button type="button" class="logic-action-btn" id="logicCheckAnswer">Check answer</button>
+                  <button type="button" class="logic-secondary-btn" id="logicNextChallenge" disabled>Next challenge</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="logic-stage" id="logicStageMaster">
+              <div class="logic-stage-header">
+                <h4>Level 3 — Circuit Master</h4>
+                <p>Combine logic gates and earn points to complete the challenge.</p>
+              </div>
+
+              <div class="logic-challenge-box">
+                <p class="logic-challenge-label">Master circuit</p>
+                <h5 id="logicMasterPrompt">Evaluate the circuit using the inputs below.</h5>
+
+                <div class="logic-input-controls" id="logicMasterControls">
+                  <button type="button" class="logic-master-toggle active" data-input-index="0" data-value="1">A = 1</button>
+                  <button type="button" class="logic-master-toggle" data-input-index="0" data-value="0">A = 0</button>
+                  <button type="button" class="logic-master-toggle active" data-input-index="1" data-value="1">B = 1</button>
+                  <button type="button" class="logic-master-toggle" data-input-index="1" data-value="0">B = 0</button>
+                  <button type="button" class="logic-master-toggle active" data-input-index="2" data-value="1">C = 1</button>
+                  <button type="button" class="logic-master-toggle" data-input-index="2" data-value="0">C = 0</button>
+                </div>
+
+                <div class="logic-answer-row">
+                  <button type="button" class="logic-action-btn" id="logicCheckMaster">Submit answer</button>
+                  <button type="button" class="logic-secondary-btn" id="logicMasterNext">Next circuit</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="logic-feedback" id="logicFeedback" aria-live="polite"></div>
+
+            <div class="logic-actions">
+              <button type="button" class="logic-secondary-btn" id="logicReplayBtn">Replay game</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" id="future">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Future</p>
+            <h2>Next ideas in development</h2>
+            <a class="back-to-map" href="#interactive-map">Back to map</a>
+          </div>
+
+          <div class="card-grid">
+            <article class="info-card">
+              <h3>Interactive map</h3>
+              <p>The illustrated world map will be developed in a later stage.</p>
+            </article>
+            <article class="info-card">
+              <h3>Portfolio content</h3>
+              <p>Authentic writing and project details will be added after review.</p>
+            </article>
+            <article class="info-card">
+              <h3>Deployment</h3>
+              <p>GitHub Pages preparation will follow once the content is ready.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-shell">
+        <p>© 2026 Zohra's Digital Universe</p>
+        <a href="#" aria-label="GitHub repository placeholder">GitHub repository placeholder</a>
+      </div>
+    </footer>
+
+    <script src="js/navigation.js"></script>
+    <script src="js/interactions.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
